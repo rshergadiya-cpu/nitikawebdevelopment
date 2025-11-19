@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coffee Menu Grid</title>
+<style>
+    body {
+    font-family: "Poppins", sans-serif;
+    background: #f4f1ee;
+    margin: 0;
+    padding: 40px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Fade-in + slide-up animation */
+.menu-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
+    position: relative;
+
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+/* Makes each card fade with slight delay (stagger effect) */
+.menu-card:nth-child(1) { animation-delay: 0.1s; }
+.menu-card:nth-child(2) { animation-delay: 0.2s; }
+.menu-card:nth-child(3) { animation-delay: 0.3s; }
+.menu-card:nth-child(4) { animation-delay: 0.4s; }
+.menu-card:nth-child(5) { animation-delay: 0.5s; }
+.menu-card:nth-child(6) { animation-delay: 0.6s; }
+.menu-card:nth-child(7) { animation-delay: 0.7s; }
+.menu-card:nth-child(8) { animation-delay: 0.8s; }
+.menu-card:nth-child(9) { animation-delay: 0.9s; }
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover effect */
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.menu-card h3 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.menu-card .price {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-weight: 600;
+    color: #c49b3f;
+    font-size: 18px;
+}
+
+.menu-card p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #5f5f5f;
+    line-height: 1.5;
+}
+
+</style>
+</head>
+<body>
+
+<div class="menu-section">
+    <div class="menu-grid">
+
+        <div class="menu-card">
+            <h3>Cappuccino</h3>
+            <span class="price">$49</span>
+            <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div class="menu-card">
+            <h3>Americano</h3>
+            <span class="price">$49</span>
+            <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div class="menu-card">
+            <h3>Espresso</h3>
+            <span class="price">$49</span>
+            <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div class="menu-card">
+            <h3>Macchiato</h3>
+            <span class="price">$49</span>
+            <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div class="menu-card">
+            <h3>Mocha</h3>
+            <span class="price">$49</span>
+            <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div class="menu-card">
+            <h3>Coffee Latte</h3>
+            <span class="price">$49</span>
+            <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div class="menu-card">
+            <h3>Piccolo Latte</h3>
+            <span class="price">$49</span>
+            <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div class="menu-card">
+            <h3>Ristretto</h3>
+            <span class="price">$49</span>
+            <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div class="menu-card">
+            <h3>Affogato</h3>
+            <span class="price">$49</span>
+            <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+
+    </div>
+</div>
