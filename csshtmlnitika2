@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Website</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* TITLES */
+.section-title h1 {
+  margin-top: 40px;
+  color: #e55b48;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.mid-title {
+  margin-top: 60px;
+  color: #e55b48;
+  font-size: 28px;
+}
+
+/* FEATURE ICONS */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin: 40px auto;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  width: 150px;
+}
+
+.feature-box img {
+  width: 70px;
+  height: 70px;
+}
+
+.feature-box h3 {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.feature-box p {
+  font-size: 13px;
+  color: #555;
+}
+
+/* FEATURED CARDS */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card {
+  width: 250px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 8px 20px;
+  background: #a55555;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* PRODUCTS SECTION */
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.product {
+  width: 250px;
+  text-align: left;
+}
+
+.product img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.product h3 {
+  margin: 8px 0 0;
+  font-size: 18px;
+}
+
+.product p {
+  margin: 5px 0;
+  color: #777;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- SECTION: Features -->
+  <section class="section-title">
+    <h1>Get ready for seamless online music</h1>
+  </section>
+
+  <section class="features">
+    <div class="feature-box">
+      <img src="img/download.png" alt="">
+      <h3>Offline mode</h3>
+      <p>Save and listen anywhere.</p>
+    </div>
+
+    <div class="feature-box">
+      <img src="img/hq.png" alt="">
+      <h3>High quality audio.</h3>
+      <p>Enjoy the full range of sound.</p>
+    </div>
+
+    <div class="feature-box">
+      <img src="img/ads.png" alt="">
+      <h3>No ads.</h3>
+      <p>Enjoy nonstop music.</p>
+    </div>
+
+    <div class="feature-box">
+      <img src="img/skip.png" alt="">
+      <h3>Unlimited skips.</h3>
+      <p>Just tap skip.</p>
+    </div>
+  </section>
+
+  <!-- SECTION: Featured Guests -->
+  <h2 class="mid-title">Featured Guests</h2>
+
+  <section class="cards">
+    <div class="card">
+      <img src="img/guest1.jpg" class="avatar">
+      <h3>Megan Smith</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, provident!</p>
+      <button>Register</button>
+    </div>
+
+    <div class="card">
+      <img src="img/guest2.jpg" class="avatar">
+      <h3>Brooke Kagie</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, provident!</p>
+      <button>Register</button>
+    </div>
+
+    <div class="card">
+      <img src="img/guest3.jpg" class="avatar">
+      <h3>Philip Martin</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, provident!</p>
+      <button>Register</button>
+    </div>
+  </section>
+
+  <!-- SECTION: Buy What's New -->
+  <h2 class="mid-title">BUY WHAT’S NEW</h2>
+
+  <section class="products">
+    <div class="product">
+      <img src="img/p1.jpg">
+      <h3>Garage Band</h3>
+      <p>Radio Station</p>
+    </div>
+
+    <div class="product">
+      <img src="img/p2.jpg">
+      <h3>Garage Band</h3>
+      <p>Radio Station</p>
+    </div>
+
+    <div class="product">
+      <img src="img/p3.jpg">
+      <h3>Garage Band</h3>
+      <p>Radio Station</p>
+    </div>
+
+    <div class="product">
+      <img src="img/p4.jpg">
+      <h3>Garage Band</h3>
+      <p>Radio Station</p>
+    </div>
+  </section>
